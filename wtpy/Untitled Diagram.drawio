@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2021-04-17T09:16:24.459Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="7zB8cPWvOM_rzUB_RKyn" version="14.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-17T13:42:11.053Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="FCm4kgquWMArMSV1EWur" version="14.6.1" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
     <mxGraphModel dx="1185" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="l2wqr4erujufnA9Lx4gH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ul8AEVvklkczvMw4_RcE-1" target="l2wqr4erujufnA9Lx4gH-1">
+        <mxCell id="l2wqr4erujufnA9Lx4gH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Ul8AEVvklkczvMw4_RcE-1" target="l2wqr4erujufnA9Lx4gH-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Ul8AEVvklkczvMw4_RcE-1" value="WtBtEngine" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
@@ -19,44 +19,152 @@
         <mxCell id="Ul8AEVvklkczvMw4_RcE-4" value="+ set_cta_strategy" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ul8AEVvklkczvMw4_RcE-1" vertex="1">
           <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="l2wqr4erujufnA9Lx4gH-1" value="set_cta_strategy(self, strategy:BaseCtaStrategy)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+        <mxCell id="l2wqr4erujufnA9Lx4gH-1" value="set_cta_strategy(self, strategy:BaseCtaStrategy)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="570" y="150" width="420" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="l2wqr4erujufnA9Lx4gH-2" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="l2wqr4erujufnA9Lx4gH-1">
+        <mxCell id="l2wqr4erujufnA9Lx4gH-2" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="l2wqr4erujufnA9Lx4gH-1" vertex="1">
           <mxGeometry y="26" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="l2wqr4erujufnA9Lx4gH-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="l2wqr4erujufnA9Lx4gH-1">
+        <mxCell id="l2wqr4erujufnA9Lx4gH-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="l2wqr4erujufnA9Lx4gH-1" vertex="1">
           <mxGeometry y="52" width="420" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="l2wqr4erujufnA9Lx4gH-4" value="ctxid = self.__wrapper__.init_cta_mocker(strategy.name())&#xa;self.__context__ = CtaContext(ctxid, strategy, self.__wrapper__, self)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="l2wqr4erujufnA9Lx4gH-1">
+        <mxCell id="l2wqr4erujufnA9Lx4gH-4" value="ctxid = self.__wrapper__.init_cta_mocker(strategy.name())&#xa;self.__context__ = CtaContext(ctxid, strategy, self.__wrapper__, self)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="l2wqr4erujufnA9Lx4gH-1" vertex="1">
           <mxGeometry y="60" width="420" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="l2wqr4erujufnA9Lx4gH-6" value="init_cta_mocker(self, name:str) -&gt; int" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="l2wqr4erujufnA9Lx4gH-6" target="IstVKyMH8X0pCNB1lLBm-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l2wqr4erujufnA9Lx4gH-6" value="init_cta_mocker(self, name:str) -&gt; int" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="1080" y="30" width="390" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="l2wqr4erujufnA9Lx4gH-7" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="l2wqr4erujufnA9Lx4gH-6">
+        <mxCell id="l2wqr4erujufnA9Lx4gH-7" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="l2wqr4erujufnA9Lx4gH-6" vertex="1">
           <mxGeometry y="26" width="390" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="l2wqr4erujufnA9Lx4gH-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="l2wqr4erujufnA9Lx4gH-6">
+        <mxCell id="l2wqr4erujufnA9Lx4gH-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="l2wqr4erujufnA9Lx4gH-6" vertex="1">
           <mxGeometry y="52" width="390" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="l2wqr4erujufnA9Lx4gH-9" value="&#39;&#39;&#39;&#xa;        创建策略环境\n&#xa;        @name      策略名称&#xa;        @return    系统内策略ID &#xa;        &#39;&#39;&#39;&#xa;        return self.api.init_cta_mocker(bytes(name, encoding = &quot;utf8&quot;) )" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="l2wqr4erujufnA9Lx4gH-6">
+        <mxCell id="l2wqr4erujufnA9Lx4gH-9" value="&#39;&#39;&#39;&#xa;        创建策略环境\n&#xa;        @name      策略名称&#xa;        @return    系统内策略ID &#xa;        &#39;&#39;&#39;&#xa;        return self.api.init_cta_mocker(bytes(name, encoding = &quot;utf8&quot;) )" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="l2wqr4erujufnA9Lx4gH-6" vertex="1">
           <mxGeometry y="60" width="390" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="l2wqr4erujufnA9Lx4gH-11" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="l2wqr4erujufnA9Lx4gH-11" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="1010" y="30" width="20" height="440" as="geometry" />
         </mxCell>
-        <mxCell id="l2wqr4erujufnA9Lx4gH-12" value="CtaContext(self, id:int, stra, wrapper: WtWrapper, engine)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+        <mxCell id="l2wqr4erujufnA9Lx4gH-12" value="CtaContext(self, id:int, stra, wrapper: WtWrapper, engine)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="1080" y="260" width="600" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="l2wqr4erujufnA9Lx4gH-13" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="l2wqr4erujufnA9Lx4gH-12">
+        <mxCell id="l2wqr4erujufnA9Lx4gH-13" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="l2wqr4erujufnA9Lx4gH-12" vertex="1">
           <mxGeometry y="26" width="600" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="l2wqr4erujufnA9Lx4gH-14" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="l2wqr4erujufnA9Lx4gH-12">
+        <mxCell id="l2wqr4erujufnA9Lx4gH-14" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="l2wqr4erujufnA9Lx4gH-12" vertex="1">
           <mxGeometry y="52" width="600" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="l2wqr4erujufnA9Lx4gH-15" value="        self.__stra_info__ = stra   #策略对象，对象基类BaseStrategy.py&#xa;        self.__wrapper__ = wrapper  #底层接口转换器&#xa;        self.__id__ = id            #策略ID&#xa;        self.__bar_cache__ = dict() #K线缓存&#xa;        self.__tick_cache__ = dict()    #tTick缓存，每次都重新去拉取，这个只做中转用，不在python里维护副本&#xa;        self.__sname__ = stra.name()    &#xa;        self.__engine__ = engine          #交易环境&#xa;        self.__pos_cache__ = None" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="l2wqr4erujufnA9Lx4gH-12">
+        <mxCell id="l2wqr4erujufnA9Lx4gH-15" value="        self.__stra_info__ = stra   #策略对象，对象基类BaseStrategy.py&#xa;        self.__wrapper__ = wrapper  #底层接口转换器&#xa;        self.__id__ = id            #策略ID&#xa;        self.__bar_cache__ = dict() #K线缓存&#xa;        self.__tick_cache__ = dict()    #tTick缓存，每次都重新去拉取，这个只做中转用，不在python里维护副本&#xa;        self.__sname__ = stra.name()    &#xa;        self.__engine__ = engine          #交易环境&#xa;        self.__pos_cache__ = None" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="l2wqr4erujufnA9Lx4gH-12" vertex="1">
           <mxGeometry y="60" width="600" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.521;entryY=-0.007;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IstVKyMH8X0pCNB1lLBm-1" target="IstVKyMH8X0pCNB1lLBm-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-1" value="init_cta_mocker(const char* name)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="30" width="250" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-2" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-1">
+          <mxGeometry y="26" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-1">
+          <mxGeometry y="52" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-4" value="+ return getRunner().initCtaMocker(name);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-1">
+          <mxGeometry y="60" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IstVKyMH8X0pCNB1lLBm-6" target="IstVKyMH8X0pCNB1lLBm-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-6" value="WtBtRunner&amp; getRunner" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="2100" y="30" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-7" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-6">
+          <mxGeometry y="26" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-6">
+          <mxGeometry y="52" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-9" value="static WtBtRunner runner;&#xa;return runner;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-6">
+          <mxGeometry y="60" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.532;entryY=0.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IstVKyMH8X0pCNB1lLBm-11" target="IstVKyMH8X0pCNB1lLBm-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-11" value="WtBtRunner" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="2420" y="30" width="200" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-12" value="HisDataReplayer	_replayer;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-11">
+          <mxGeometry y="26" width="200" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-11">
+          <mxGeometry y="52" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-14" value="+ initCtaMocker(const char* name)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-11">
+          <mxGeometry y="60" width="200" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-16" value="uint32_t WtBtRunner::initCtaMocker(const char* name)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="2760" y="30" width="360" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-17" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-16">
+          <mxGeometry y="26" width="360" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-16">
+          <mxGeometry y="52" width="360" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-19" value="_cta_mocker = new ExpCtaMocker(&amp;_replayer, name);&#xa;	_replayer.register_sink(_cta_mocker);&#xa;	return _cta_mocker-&gt;id();" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-16">
+          <mxGeometry y="60" width="360" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-25" value="_cta_mocker = new ExpCtaMocker(&amp;_replayer, name);&#xa;	_replayer.register_sink(_cta_mocker);&#xa;	return _cta_mocker-&gt;id(); // 返回的事 _context_id 对象" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-16">
+          <mxGeometry y="130" width="360" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-21" value="ExpCtaMocker::ExpCtaMocker(HisDataReplayer* replayer, const char* name)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="3310" y="30" width="470" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-22" value=": CtaMocker(replayer, name)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-21">
+          <mxGeometry y="26" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-21">
+          <mxGeometry y="52" width="470" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-24" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-21">
+          <mxGeometry y="60" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-27" value="CtaMocker::CtaMocker(HisDataReplayer* replayer, const char* name, int32_t slippage /* = 0 */)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="3950" y="30" width="610" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-28" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-27">
+          <mxGeometry y="26" width="610" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-29" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-27">
+          <mxGeometry y="52" width="610" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-30" value=": ICtaStraCtx(name)&#xa;	, _replayer(replayer)&#xa;	, _total_calc_time(0)&#xa;	, _emit_times(0)&#xa;	, _is_in_schedule(false)&#xa;	, _ud_modified(false)&#xa;	, _strategy(NULL)&#xa;	, _slippage(slippage)&#xa;	, _schedule_times(0)&#xa;{&#xa;	_context_id = makeCtxId();&#xa;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-27">
+          <mxGeometry y="60" width="610" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.516;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IstVKyMH8X0pCNB1lLBm-22" target="IstVKyMH8X0pCNB1lLBm-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-32" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="3230" y="10" width="20" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IstVKyMH8X0pCNB1lLBm-19" target="IstVKyMH8X0pCNB1lLBm-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-34" value="HisDataReplayer::register_sink(IDataSink* listener)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="3300" y="300" width="470" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-35" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-34">
+          <mxGeometry y="26" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-36" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-34">
+          <mxGeometry y="52" width="470" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-37" value="&#xa;{ _listener = listener; }" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-34">
+          <mxGeometry y="60" width="470" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

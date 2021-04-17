@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-17T16:54:01.469Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="y3HkPVOfw94ZHA-EqESO" version="14.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-17T17:43:06.066Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="ChPFOhyc56V9H1--jyyE" version="14.6.1" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
-    <mxGraphModel dx="723" dy="402" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="4063" dy="2269" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -241,7 +241,11 @@
           <mxGeometry y="60" width="350" height="170" as="geometry" />
         </mxCell>
         <mxCell id="IstVKyMH8X0pCNB1lLBm-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IstVKyMH8X0pCNB1lLBm-56" target="IstVKyMH8X0pCNB1lLBm-62">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2950" y="2383" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="IstVKyMH8X0pCNB1lLBm-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.527;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IstVKyMH8X0pCNB1lLBm-65" target="IstVKyMH8X0pCNB1lLBm-102">
           <mxGeometry relative="1" as="geometry" />
@@ -351,8 +355,11 @@
         <mxCell id="IstVKyMH8X0pCNB1lLBm-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IstVKyMH8X0pCNB1lLBm-93" target="IstVKyMH8X0pCNB1lLBm-97">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IstVKyMH8X0pCNB1lLBm-102" target="IstVKyMH8X0pCNB1lLBm-107">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="IstVKyMH8X0pCNB1lLBm-102" value="engine.commitBTConfig" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="670" y="1160" width="370" height="150" as="geometry" />
+          <mxGeometry x="720" y="1160" width="370" height="150" as="geometry" />
         </mxCell>
         <mxCell id="IstVKyMH8X0pCNB1lLBm-103" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-102">
           <mxGeometry y="26" width="370" height="26" as="geometry" />
@@ -362,6 +369,33 @@
         </mxCell>
         <mxCell id="IstVKyMH8X0pCNB1lLBm-105" value="        cfgfile = json.dumps(self.__config__, indent=4, sort_keys=True)&#xa;        self.__wrapper__.config_backtest(cfgfile, False)&#xa;        self.__cfg_commited__ = True" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-102">
           <mxGeometry y="60" width="370" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-107" value="config_backtest(self, cfgfile:str = &#39;config.json&#39;, isFile:bool = True)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1142.5" y="1270" width="460" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-108" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-107">
+          <mxGeometry y="26" width="460" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-109" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-107">
+          <mxGeometry y="52" width="460" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-110" value="self.api.config_backtest(bytes(cfgfile, encoding = &quot;utf8&quot;), isFile)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-107">
+          <mxGeometry y="60" width="460" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-112" value="config_backtest(const char* cfgfile, bool isFile)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1750" y="1194" width="350" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-113" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-112">
+          <mxGeometry y="26" width="350" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-114" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-112">
+          <mxGeometry y="52" width="350" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-115" value="void config_backtest(const char* cfgfile, bool isFile)&#xa;{&#xa;	if (strlen(cfgfile) == 0)&#xa;		getRunner().config(&quot;configbt.json&quot;, true);&#xa;	else&#xa;		getRunner().config(cfgfile, isFile);&#xa;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IstVKyMH8X0pCNB1lLBm-112">
+          <mxGeometry y="60" width="350" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="IstVKyMH8X0pCNB1lLBm-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IstVKyMH8X0pCNB1lLBm-108" target="IstVKyMH8X0pCNB1lLBm-112">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

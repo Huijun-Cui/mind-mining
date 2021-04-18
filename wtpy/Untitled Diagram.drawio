@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-18T14:27:35.794Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="mMNYkpqw4W-31IjpQ4t8" version="14.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-18T14:53:56.368Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="7QywdC6wWF_sd8u1zYMQ" version="14.6.1" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
-    <mxGraphModel dx="2081" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="4722" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -541,7 +541,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="MH00NZMKkjp8ihjZMOqk-48" value="void HisDataReplayer::loadFees(const char* filename)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="-940" y="1797" width="430" height="750" as="geometry" />
+          <mxGeometry x="-920" y="2160" width="430" height="750" as="geometry" />
         </mxCell>
         <mxCell id="MH00NZMKkjp8ihjZMOqk-49" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-48">
           <mxGeometry y="26" width="430" height="26" as="geometry" />
@@ -552,8 +552,35 @@
         <mxCell id="MH00NZMKkjp8ihjZMOqk-51" value="if (strlen(filename) == 0)&#xa;		return;&#xa;&#xa;	if (!StdFile::exists(filename))&#xa;	{&#xa;		WTSLogger::error(&quot;手续费模板文件%s不存在&quot;, filename);&#xa;		return;&#xa;	}&#xa;&#xa;&#xa;	std::string content;&#xa;	StdFile::read_file_content(filename, content);&#xa;	if (content.empty())&#xa;	{&#xa;		WTSLogger::error(&quot;手续费模板文件%s为空&quot;, filename);&#xa;		return;&#xa;	}&#xa;&#xa;	rj::Document root;&#xa;	root.Parse(content.c_str());&#xa;&#xa;	if (root.HasParseError())&#xa;	{&#xa;		WTSLogger::error(&quot;手续费模板文件%s解析失败&quot;, filename);&#xa;		return;&#xa;	}&#xa;&#xa;	WTSVariant* cfg = WTSVariant::createObject();&#xa;	if (!jsonToVariant(root, cfg))&#xa;	{&#xa;		WTSLogger::error(&quot;手续费模板文件%s转换失败&quot;, filename);&#xa;		return;&#xa;	}&#xa;&#xa;	auto keys = cfg-&gt;memberNames();&#xa;	for (const std::string&amp; key : keys)&#xa;	{&#xa;		WTSVariant* cfgItem = cfg-&gt;get(key.c_str());&#xa;		FeeItem&amp; fItem = _fee_map[key];&#xa;		fItem._by_volume = cfgItem-&gt;getBoolean(&quot;byvolume&quot;);&#xa;		fItem._open = cfgItem-&gt;getDouble(&quot;open&quot;);&#xa;		fItem._close = cfgItem-&gt;getDouble(&quot;close&quot;);&#xa;		fItem._close_today = cfgItem-&gt;getDouble(&quot;closetoday&quot;);&#xa;	}&#xa;&#xa;	cfg-&gt;release();&#xa;&#xa;	WTSLogger::info(&quot;共加载%u条手续费模板&quot;, _fee_map.size());" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-48">
           <mxGeometry y="60" width="430" height="690" as="geometry" />
         </mxCell>
-        <mxCell id="MH00NZMKkjp8ihjZMOqk-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MH00NZMKkjp8ihjZMOqk-46" target="MH00NZMKkjp8ihjZMOqk-51">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-53" value="WTSBaseDataMgr::loadContracts(const char* filename)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-1820" y="2160" width="630" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-54" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-53">
+          <mxGeometry y="26" width="630" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-55" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-53">
+          <mxGeometry y="52" width="630" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-56" value="if (!StdFile::exists(filename))&#xa;	{&#xa;		WTSLogger::error(&quot;代码列表文件 %s 不存在&quot;, filename);&#xa;		return false;&#xa;	}&#xa;&#xa;	std::string content;&#xa;	StdFile::read_file_content(filename, content);&#xa;	rj::Document root;&#xa;	if (root.Parse(content.c_str()).HasParseError())&#xa;	{&#xa;		WTSLogger::error(&quot;代码列表文件解析失败&quot;);&#xa;		return false;&#xa;	}&#xa;&#xa;	for(auto&amp; m : root.GetObject())&#xa;	{&#xa;		const std::string&amp; exchg = m.name.GetString();&#xa;		const rj::Value&amp; jExchg = m.value;&#xa;&#xa;		for(auto&amp; cMember : jExchg.GetObject())&#xa;		{&#xa;			const std::string&amp; code = cMember.name.GetString();&#xa;			const rj::Value&amp; jcInfo = cMember.value;&#xa;&#xa;			WTSCommodityInfo* commInfo = getCommodity(jcInfo[&quot;exchg&quot;].GetString(), jcInfo[&quot;product&quot;].GetString());&#xa;			if (commInfo == NULL)&#xa;				continue;&#xa;&#xa;			WTSContractInfo* cInfo = WTSContractInfo::create(code.c_str(),&#xa;				jcInfo[&quot;name&quot;].GetString(),&#xa;				jcInfo[&quot;exchg&quot;].GetString(),&#xa;				jcInfo[&quot;product&quot;].GetString());&#xa;&#xa;			uint32_t maxMktQty = 0;&#xa;			uint32_t maxLmtQty = 0;&#xa;			if (jcInfo.HasMember(&quot;maxmarketqty&quot;))&#xa;				maxMktQty = jcInfo[&quot;maxmarketqty&quot;].GetUint();&#xa;			if (jcInfo.HasMember(&quot;maxlimitqty&quot;))&#xa;				maxLmtQty = jcInfo[&quot;maxlimitqty&quot;].GetUint();&#xa;			cInfo-&gt;setVolumeLimits(maxMktQty, maxLmtQty);&#xa;&#xa;			WTSContractList* contractList = (WTSContractList*)m_mapExchgContract-&gt;get(cInfo-&gt;getExchg());&#xa;			if (contractList == NULL)&#xa;			{&#xa;				contractList = WTSContractList::create();&#xa;				m_mapExchgContract-&gt;add(cInfo-&gt;getExchg(), contractList, false);&#xa;			}&#xa;			contractList-&gt;add(cInfo-&gt;getCode(), cInfo, false);&#xa;&#xa;			commInfo-&gt;addCode(code.c_str());&#xa;		}&#xa;	}&#xa;&#xa;	return true;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-53">
+          <mxGeometry y="60" width="630" height="790" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-57" value="" style="shape=singleArrow;direction=west;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-3090" y="1930" width="2460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-58" value="WTSCommodityInfo* WTSBaseDataMgr::getCommodity(const char* exchgpid)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-2610" y="2160" width="550" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-59" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-58">
+          <mxGeometry y="26" width="550" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-60" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-58">
+          <mxGeometry y="52" width="550" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-61" value="return (WTSCommodityInfo*)m_pCommodityMap-&gt;get(exchgpid);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-58">
+          <mxGeometry y="60" width="550" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-62" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="-1920" y="2100" width="60" height="950" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

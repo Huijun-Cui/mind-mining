@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-18T13:32:58.119Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="LX7tswibjbwSYUHWyT1M" version="14.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-18T14:27:35.794Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="mMNYkpqw4W-31IjpQ4t8" version="14.6.1" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
     <mxGraphModel dx="2081" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -521,18 +521,38 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="MH00NZMKkjp8ihjZMOqk-43" value="HisDataReplayer::init(WTSVariant* cfg)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="-155" y="1734" width="330" height="86" as="geometry" />
+          <mxGeometry x="-290" y="1790" width="350" height="440" as="geometry" />
         </mxCell>
-        <mxCell id="MH00NZMKkjp8ihjZMOqk-44" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-43">
-          <mxGeometry y="26" width="330" height="26" as="geometry" />
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-44" value="_replayer.init(cfg-&gt;get(&quot;replayer&quot;));" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-43">
+          <mxGeometry y="26" width="350" height="26" as="geometry" />
         </mxCell>
         <mxCell id="MH00NZMKkjp8ihjZMOqk-45" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-43">
-          <mxGeometry y="52" width="330" height="8" as="geometry" />
+          <mxGeometry y="52" width="350" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="MH00NZMKkjp8ihjZMOqk-46" value="loadFees(cfg-&gt;getCString(&quot;fees&quot;));" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-43">
-          <mxGeometry y="60" width="330" height="26" as="geometry" />
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-46" value="_mode = cfg-&gt;getCString(&quot;mode&quot;);&#xa;	_base_dir = StrUtil::standardisePath(cfg-&gt;getCString(&quot;path&quot;));&#xa;&#xa;	_begin_time = cfg-&gt;getUInt64(&quot;stime&quot;);&#xa;	_end_time = cfg-&gt;getUInt64(&quot;etime&quot;);&#xa;&#xa;	_tick_enabled = cfg-&gt;getBoolean(&quot;tick&quot;);&#xa;&#xa;	//基础数据文件&#xa;	WTSVariant* cfgBF = cfg-&gt;get(&quot;basefiles&quot;);&#xa;	if (cfgBF-&gt;get(&quot;session&quot;))&#xa;		_bd_mgr.loadSessions(cfgBF-&gt;getCString(&quot;session&quot;));&#xa;&#xa;	if (cfgBF-&gt;get(&quot;commodity&quot;))&#xa;		_bd_mgr.loadCommodities(cfgBF-&gt;getCString(&quot;commodity&quot;));&#xa;&#xa;	if (cfgBF-&gt;get(&quot;contract&quot;))&#xa;		_bd_mgr.loadContracts(cfgBF-&gt;getCString(&quot;contract&quot;));&#xa;&#xa;	if (cfgBF-&gt;get(&quot;holiday&quot;))&#xa;		_bd_mgr.loadHolidays(cfgBF-&gt;getCString(&quot;holiday&quot;));&#xa;&#xa;	if (cfgBF-&gt;get(&quot;hot&quot;))&#xa;		_hot_mgr.loadHots(cfgBF-&gt;getCString(&quot;hot&quot;));&#xa;&#xa;	loadFees(cfg-&gt;getCString(&quot;fees&quot;));" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-43">
+          <mxGeometry y="60" width="350" height="380" as="geometry" />
         </mxCell>
         <mxCell id="MH00NZMKkjp8ihjZMOqk-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.473;entryY=0.009;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MH00NZMKkjp8ihjZMOqk-4" target="MH00NZMKkjp8ihjZMOqk-43">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-124" y="1705" />
+              <mxPoint x="-124" y="1780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-48" value="void HisDataReplayer::loadFees(const char* filename)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-940" y="1797" width="430" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-49" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-48">
+          <mxGeometry y="26" width="430" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-50" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-48">
+          <mxGeometry y="52" width="430" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-51" value="if (strlen(filename) == 0)&#xa;		return;&#xa;&#xa;	if (!StdFile::exists(filename))&#xa;	{&#xa;		WTSLogger::error(&quot;手续费模板文件%s不存在&quot;, filename);&#xa;		return;&#xa;	}&#xa;&#xa;&#xa;	std::string content;&#xa;	StdFile::read_file_content(filename, content);&#xa;	if (content.empty())&#xa;	{&#xa;		WTSLogger::error(&quot;手续费模板文件%s为空&quot;, filename);&#xa;		return;&#xa;	}&#xa;&#xa;	rj::Document root;&#xa;	root.Parse(content.c_str());&#xa;&#xa;	if (root.HasParseError())&#xa;	{&#xa;		WTSLogger::error(&quot;手续费模板文件%s解析失败&quot;, filename);&#xa;		return;&#xa;	}&#xa;&#xa;	WTSVariant* cfg = WTSVariant::createObject();&#xa;	if (!jsonToVariant(root, cfg))&#xa;	{&#xa;		WTSLogger::error(&quot;手续费模板文件%s转换失败&quot;, filename);&#xa;		return;&#xa;	}&#xa;&#xa;	auto keys = cfg-&gt;memberNames();&#xa;	for (const std::string&amp; key : keys)&#xa;	{&#xa;		WTSVariant* cfgItem = cfg-&gt;get(key.c_str());&#xa;		FeeItem&amp; fItem = _fee_map[key];&#xa;		fItem._by_volume = cfgItem-&gt;getBoolean(&quot;byvolume&quot;);&#xa;		fItem._open = cfgItem-&gt;getDouble(&quot;open&quot;);&#xa;		fItem._close = cfgItem-&gt;getDouble(&quot;close&quot;);&#xa;		fItem._close_today = cfgItem-&gt;getDouble(&quot;closetoday&quot;);&#xa;	}&#xa;&#xa;	cfg-&gt;release();&#xa;&#xa;	WTSLogger::info(&quot;共加载%u条手续费模板&quot;, _fee_map.size());" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-48">
+          <mxGeometry y="60" width="430" height="690" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MH00NZMKkjp8ihjZMOqk-46" target="MH00NZMKkjp8ihjZMOqk-51">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>

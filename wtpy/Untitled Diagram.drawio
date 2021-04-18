@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-18T12:20:52.665Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="OLWIpRgJWOe4GN10CIFe" version="14.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-18T12:39:04.698Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="5GiYvpjXuZJpeN8cMSqx" version="14.6.1" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
-    <mxGraphModel dx="981" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1185" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -202,7 +202,7 @@
           <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="IstVKyMH8X0pCNB1lLBm-47" value="WtBtRunner&amp; getRunner" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="740" y="2050" width="230" height="110" as="geometry" />
+          <mxGeometry x="725" y="2070" width="230" height="110" as="geometry" />
         </mxCell>
         <mxCell id="IstVKyMH8X0pCNB1lLBm-48" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="IstVKyMH8X0pCNB1lLBm-47" vertex="1">
           <mxGeometry y="26" width="230" height="26" as="geometry" />
@@ -482,7 +482,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="MH00NZMKkjp8ihjZMOqk-29" value="bool static jsonToVariant(const rj::Value&amp; root, WTSVariant* params)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="880" y="1860" width="450" height="160" as="geometry" />
+          <mxGeometry x="880" y="1860" width="450" height="190" as="geometry" />
         </mxCell>
         <mxCell id="MH00NZMKkjp8ihjZMOqk-30" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-29">
           <mxGeometry y="26" width="450" height="26" as="geometry" />
@@ -490,8 +490,8 @@
         <mxCell id="MH00NZMKkjp8ihjZMOqk-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-29">
           <mxGeometry y="52" width="450" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="MH00NZMKkjp8ihjZMOqk-32" value="case rj::kObjectType:&#xa;			{&#xa;				WTSVariant* subObj = WTSVariant::createObject();&#xa;				if (jsonToVariant(item, subObj))&#xa;					params-&gt;append(key, subObj, false);&#xa;			}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-29">
-          <mxGeometry y="60" width="450" height="100" as="geometry" />
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-32" value="case rj::kObjectType:&#xa;			{&#xa;				WTSVariant* subObj = WTSVariant::createObject();&#xa;				if (jsonToVariant(item, subObj))&#xa;					params-&gt;append(key, subObj, false);&#xa;			}&#xa;// 递归函数，把json的层次结构保存在params中" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-29">
+          <mxGeometry y="60" width="450" height="130" as="geometry" />
         </mxCell>
         <mxCell id="MH00NZMKkjp8ihjZMOqk-33" value="WTSVariant::append(const char* _name, WTSVariant *item, bool bAutoRetain = true)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="1470" y="1700" width="520" height="250" as="geometry" />
@@ -504,6 +504,21 @@
         </mxCell>
         <mxCell id="MH00NZMKkjp8ihjZMOqk-36" value="if (_type != VT_Object || NULL == item)&#xa;			return false;&#xa;&#xa;		if (_value._map == NULL)&#xa;		{&#xa;			_value._map = ChildrenMap::create();&#xa;		}&#xa;&#xa;		_value._map-&gt;add(_name, item, bAutoRetain);&#xa;&#xa;		return true;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-33">
           <mxGeometry y="60" width="520" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-38" value="void add(const T &amp;_key, WTSObject* obj, bool bAutoRetain = true)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="2190" y="1700" width="440" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-39" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-38">
+          <mxGeometry y="26" width="440" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-40" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-38">
+          <mxGeometry y="52" width="440" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-41" value="if (bAutoRetain &amp;&amp; obj)&#xa;			obj-&gt;retain();&#xa;&#xa;		WTSObject* pOldObj = NULL;&#xa;		Iterator it = _map.find(_key);&#xa;		if (it != _map.end())&#xa;		{&#xa;			pOldObj = it-&gt;second;&#xa;		}&#xa;&#xa;		_map[_key] = obj;&#xa;&#xa;		if (pOldObj) pOldObj-&gt;release();" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MH00NZMKkjp8ihjZMOqk-38">
+          <mxGeometry y="60" width="440" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MH00NZMKkjp8ihjZMOqk-36" target="MH00NZMKkjp8ihjZMOqk-38">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

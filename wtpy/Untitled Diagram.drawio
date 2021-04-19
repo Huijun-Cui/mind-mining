@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-19T15:02:55.592Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="fv_SNshhAOeBZSugS2ut" version="14.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-19T15:15:33.400Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="RAsNXoJfodzSKy9FHWQY" version="14.6.1" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
-    <mxGraphModel dx="4485" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="5670" dy="1323" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -568,7 +568,7 @@
           <mxGeometry x="-3090" y="1930" width="2460" height="60" as="geometry" />
         </mxCell>
         <mxCell id="MH00NZMKkjp8ihjZMOqk-58" value="WTSCommodityInfo* WTSBaseDataMgr::getCommodity(const char* exchg, const char* pid)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="-2610" y="2160" width="610" height="160" as="geometry" />
+          <mxGeometry x="-2610" y="2160" width="610" height="180" as="geometry" />
         </mxCell>
         <mxCell id="MH00NZMKkjp8ihjZMOqk-59" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="MH00NZMKkjp8ihjZMOqk-58" vertex="1">
           <mxGeometry y="26" width="610" height="26" as="geometry" />
@@ -576,8 +576,8 @@
         <mxCell id="MH00NZMKkjp8ihjZMOqk-60" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="MH00NZMKkjp8ihjZMOqk-58" vertex="1">
           <mxGeometry y="52" width="610" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="MH00NZMKkjp8ihjZMOqk-61" value="std::string key = StrUtil::printf(&quot;%s.%s&quot;, exchg, pid);&#xa;	if (m_pCommodityMap == NULL)&#xa;		return NULL;&#xa;&#xa;	return (WTSCommodityInfo*)m_pCommodityMap-&gt;get(key); // m_pCommodityMap类型为WTSCommodityMap" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="MH00NZMKkjp8ihjZMOqk-58" vertex="1">
-          <mxGeometry y="60" width="610" height="100" as="geometry" />
+        <mxCell id="MH00NZMKkjp8ihjZMOqk-61" value="std::string key = StrUtil::printf(&quot;%s.%s&quot;, exchg, pid);&#xa;	if (m_pCommodityMap == NULL)&#xa;		return NULL;&#xa;&#xa;	return (WTSCommodityInfo*)m_pCommodityMap-&gt;get(key); &#xa;// m_pCommodityMap类型为WTSCommodityMap&#xa;// m_pCommodityMap-&gt;get(key) 返回的是 WTSObject " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="MH00NZMKkjp8ihjZMOqk-58" vertex="1">
+          <mxGeometry y="60" width="610" height="120" as="geometry" />
         </mxCell>
         <mxCell id="MH00NZMKkjp8ihjZMOqk-62" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;" parent="1" vertex="1">
           <mxGeometry x="-1920" y="2100" width="60" height="950" as="geometry" />

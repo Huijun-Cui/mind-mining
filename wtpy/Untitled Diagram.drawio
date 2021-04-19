@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-19T15:24:59.446Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="JMBhmBW9Bi5Vxhlos0SL" version="14.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-19T15:50:06.742Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="IdNoRZ7f8sTlCgi9-dD7" version="14.6.1" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
-    <mxGraphModel dx="4722" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="4485" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -630,6 +630,9 @@
         <mxCell id="9yVDbRNUb8ltMoReYBFW-15" value="create()&#xa;size()&#xa;get()&#xa;add()&#xa;remove()&#xa;begin()&#xa;end()&#xa;find()&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="9yVDbRNUb8ltMoReYBFW-12">
           <mxGeometry y="60" width="290" height="140" as="geometry" />
         </mxCell>
+        <mxCell id="9yVDbRNUb8ltMoReYBFW-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="9yVDbRNUb8ltMoReYBFW-17" target="9yVDbRNUb8ltMoReYBFW-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="9yVDbRNUb8ltMoReYBFW-17" value="WTSObject" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="-10" y="3160" width="260" height="200" as="geometry" />
         </mxCell>
@@ -686,6 +689,18 @@
         </mxCell>
         <mxCell id="9yVDbRNUb8ltMoReYBFW-36" value="typedef WTSHashMap&lt;std::string&gt;		WTSExchgContract;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="9yVDbRNUb8ltMoReYBFW-33">
           <mxGeometry y="60" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9yVDbRNUb8ltMoReYBFW-37" value="WTSContractInfo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="3154" width="370" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="9yVDbRNUb8ltMoReYBFW-38" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="9yVDbRNUb8ltMoReYBFW-37">
+          <mxGeometry y="26" width="370" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9yVDbRNUb8ltMoReYBFW-39" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="9yVDbRNUb8ltMoReYBFW-37">
+          <mxGeometry y="52" width="370" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9yVDbRNUb8ltMoReYBFW-40" value="create()&#xa;setVolumeLimits()&#xa;const char* getCode()	const{return m_strCode.c_str();}&#xa;	const char* getExchg()	const{return m_strExchg.c_str();}&#xa;	const char* getName()	const{return m_strName.c_str();}&#xa;	const char* getProduct()	const{return m_strProduct.c_str();}&#xa;&#xa;	const char* getFullCode()	const{ return m_strFullCode.c_str(); }&#xa;	const char* getFullPid()	const{ return m_strFullPid.c_str(); }&#xa;&#xa;	uint32_t	getMaxMktVol() const{ return m_maxMktQty; }&#xa;	uint32_t	getMaxLmtVol() const{ return m_maxLmtQty; }" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="9yVDbRNUb8ltMoReYBFW-37">
+          <mxGeometry y="60" width="370" height="220" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-27T13:52:53.713Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="deT7SJZtzrYp1xE9FPGB" version="14.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-27T13:57:56.741Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="F531PMm9ww-viS2_gqWo" version="14.6.6" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
     <mxGraphModel dx="5585" dy="1512" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -760,6 +760,36 @@
           <mxGeometry y="60" width="520" height="110" as="geometry" />
         </mxCell>
         <mxCell id="uQYg9LUSlTKV0xuyix9p-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uQYg9LUSlTKV0xuyix9p-3" target="uQYg9LUSlTKV0xuyix9p-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-11" value="register_cta_callbacks(FuncStraInitCallback cbInit, FuncStraTickCallback cbTick, FuncStraCalcCallback cbCalc, FuncStraBarCallback cbBar)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="-300" width="920" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-12" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="uQYg9LUSlTKV0xuyix9p-11">
+          <mxGeometry y="26" width="920" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="uQYg9LUSlTKV0xuyix9p-11">
+          <mxGeometry y="52" width="920" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-14" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="uQYg9LUSlTKV0xuyix9p-11">
+          <mxGeometry y="60" width="920" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uQYg9LUSlTKV0xuyix9p-9" target="uQYg9LUSlTKV0xuyix9p-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-16" value="void WtBtRunner::registerCtaCallbacks(FuncStraInitCallback cbInit, FuncStraTickCallback cbTick, FuncStraCalcCallback cbCalc, FuncStraBarCallback cbBar)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="2580" y="-315" width="1010" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-17" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="uQYg9LUSlTKV0xuyix9p-16">
+          <mxGeometry y="26" width="1010" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="uQYg9LUSlTKV0xuyix9p-16">
+          <mxGeometry y="52" width="1010" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-19" value="    _cb_cta_init = cbInit;&#xa;    _cb_cta_tick = cbTick;&#xa;    _cb_cta_calc = cbCalc;&#xa;    _cb_cta_bar = cbBar;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="uQYg9LUSlTKV0xuyix9p-16">
+          <mxGeometry y="60" width="1010" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uQYg9LUSlTKV0xuyix9p-12" target="uQYg9LUSlTKV0xuyix9p-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-27T14:34:11.864Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="_iQwumPwAP3gS5vRmLWM" version="14.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-27T14:40:10.061Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="kdIbQlM87bfOuWHJRZJG" version="14.6.6" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
     <mxGraphModel dx="5381" dy="2248" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -817,6 +817,36 @@
           <mxGeometry y="60" width="480" height="160" as="geometry" />
         </mxCell>
         <mxCell id="uQYg9LUSlTKV0xuyix9p-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.461;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="uQYg9LUSlTKV0xuyix9p-23" target="uQYg9LUSlTKV0xuyix9p-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-31" value="CtaContext::stra_get_bars(self, code:str, period:str, count:int, isMain:bool = False)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="-790" width="560" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-32" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="uQYg9LUSlTKV0xuyix9p-31">
+          <mxGeometry y="26" width="560" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-33" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="uQYg9LUSlTKV0xuyix9p-31">
+          <mxGeometry y="52" width="560" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-34" value="cnt =  self.__wrapper__.cta_get_bars(self.__id__, code, period, count, isMain)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="uQYg9LUSlTKV0xuyix9p-31">
+          <mxGeometry y="60" width="560" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uQYg9LUSlTKV0xuyix9p-29" target="uQYg9LUSlTKV0xuyix9p-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-36" value="WtWrapper::cta_get_bars" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1960" y="-790" width="740" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-37" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="uQYg9LUSlTKV0xuyix9p-36">
+          <mxGeometry y="26" width="740" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-38" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="uQYg9LUSlTKV0xuyix9p-36">
+          <mxGeometry y="52" width="740" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-39" value=" return self.api.cta_get_bars(id, bytes(stdCode, encoding = &quot;utf8&quot;), bytes(period, encoding = &quot;utf8&quot;), count, isMain, cb_stra_get_bar)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="uQYg9LUSlTKV0xuyix9p-36">
+          <mxGeometry y="60" width="740" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uQYg9LUSlTKV0xuyix9p-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uQYg9LUSlTKV0xuyix9p-32" target="uQYg9LUSlTKV0xuyix9p-36">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>

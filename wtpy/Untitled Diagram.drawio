@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-05-01T15:37:32.311Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="C5gF5QulgK6fuqSpsLMK" version="14.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-02T08:21:45.732Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="SZNe3F6HyiQQwaqVBkff" version="14.6.9" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
     <mxGraphModel dx="5822" dy="2494" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -864,62 +864,74 @@
         <mxCell id="POoTXl7KcNiQC0DHqmNx-4" value="CtaMocker* ctx = getRunner().cta_mocker();" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="POoTXl7KcNiQC0DHqmNx-1" vertex="1">
           <mxGeometry y="60" width="920" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-1" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" vertex="1" parent="1">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-1" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" parent="1" vertex="1">
           <mxGeometry x="3760" y="-1360" width="1600" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-2" value=" WTSKlineSlice* create(const char* code, WTSKlinePeriod period, uint32_t times, WTSBarStruct* hisHead, int32_t hisCnt, WTSBarStruct* rtHead = NULL, int32_t rtCnt = 0)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-2" value=" WTSKlineSlice* create(const char* code, WTSKlinePeriod period, uint32_t times, WTSBarStruct* hisHead, int32_t hisCnt, WTSBarStruct* rtHead = NULL, int32_t rtCnt = 0)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="3930" y="-1250" width="1040" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-3" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Z-ceUlf4IhPRo_-z3r3I-2">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-3" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-2" vertex="1">
           <mxGeometry y="26" width="1040" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Z-ceUlf4IhPRo_-z3r3I-2">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-2" vertex="1">
           <mxGeometry y="52" width="1040" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-5" value="        if (hisHead == NULL &amp;&amp; rtHead == NULL)&#xa;            return NULL;&#xa;        if (hisCnt == 0 &amp;&amp; rtCnt == 0)&#xa;            return NULL;&#xa;        WTSKlineSlice *pRet = new WTSKlineSlice;&#xa;        strcpy(pRet-&gt;m_strCode, code);&#xa;        pRet-&gt;m_kpPeriod = period;&#xa;        pRet-&gt;m_uTimes = times;&#xa;        pRet-&gt;m_bsHisBegin = hisHead;&#xa;        pRet-&gt;m_iHisCnt = hisCnt;&#xa;        pRet-&gt;m_bsRtBegin = rtHead;&#xa;        pRet-&gt;m_iRtCnt = rtCnt;&#xa;        return pRet;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Z-ceUlf4IhPRo_-z3r3I-2">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-5" value="        if (hisHead == NULL &amp;&amp; rtHead == NULL)&#xa;            return NULL;&#xa;        if (hisCnt == 0 &amp;&amp; rtCnt == 0)&#xa;            return NULL;&#xa;        WTSKlineSlice *pRet = new WTSKlineSlice;&#xa;        strcpy(pRet-&gt;m_strCode, code);&#xa;        pRet-&gt;m_kpPeriod = period;&#xa;        pRet-&gt;m_uTimes = times;&#xa;        pRet-&gt;m_bsHisBegin = hisHead;&#xa;        pRet-&gt;m_iHisCnt = hisCnt;&#xa;        pRet-&gt;m_bsRtBegin = rtHead;&#xa;        pRet-&gt;m_iRtCnt = rtCnt;&#xa;        return pRet;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-2" vertex="1">
           <mxGeometry y="60" width="1040" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-6" value="class WTSKlineSlice : public WTSObject" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-6" value="class WTSKlineSlice : public WTSObject" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="3930" y="-940" width="310" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-7" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Z-ceUlf4IhPRo_-z3r3I-6">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-7" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-6" vertex="1">
           <mxGeometry y="26" width="310" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Z-ceUlf4IhPRo_-z3r3I-6">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-6" vertex="1">
           <mxGeometry y="52" width="310" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-9" value="private:&#xa;    char            m_strCode[MAX_INSTRUMENT_LENGTH];&#xa;    WTSKlinePeriod  m_kpPeriod;&#xa;    uint32_t        m_uTimes;&#xa;    WTSBarStruct*   m_bsHisBegin;&#xa;    int32_t         m_iHisCnt;&#xa;    WTSBarStruct*   m_bsRtBegin;&#xa;    int32_t         m_iRtCnt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Z-ceUlf4IhPRo_-z3r3I-6">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-9" value="private:&#xa;    char            m_strCode[MAX_INSTRUMENT_LENGTH];&#xa;    WTSKlinePeriod  m_kpPeriod;&#xa;    uint32_t        m_uTimes;&#xa;    WTSBarStruct*   m_bsHisBegin;&#xa;    int32_t         m_iHisCnt;&#xa;    WTSBarStruct*   m_bsRtBegin;&#xa;    int32_t         m_iRtCnt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-6" vertex="1">
           <mxGeometry y="60" width="310" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-10" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
-          <mxGeometry x="3860" y="-1260" width="50" height="1140" as="geometry" />
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-10" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="3860" y="-1260" width="50" height="1220" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-11" value=" WTSDataFactory::extractKlineData(WTSKlineSlice* baseKline, WTSKlinePeriod period, uint32_t times, WTSSessionInfo* sInfo, bool bIncludeOpen /* = true */)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="3930" y="-660" width="980" height="400" as="geometry" />
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-11" value=" WTSDataFactory::extractKlineData(WTSKlineSlice* baseKline, WTSKlinePeriod period, uint32_t times, WTSSessionInfo* sInfo, bool bIncludeOpen /* = true */)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="3930" y="-710" width="980" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-12" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Z-ceUlf4IhPRo_-z3r3I-11">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-12" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-11" vertex="1">
           <mxGeometry y="26" width="980" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Z-ceUlf4IhPRo_-z3r3I-11">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-11" vertex="1">
           <mxGeometry y="52" width="980" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-14" value="if(baseKline == NULL || baseKline-&gt;size() == 0)&#xa;        return NULL;&#xa;    //一倍，则不需要转换&#xa;    if(times &lt;= 1 || period == KP_Tick)&#xa;    {&#xa;        return NULL;&#xa;    }&#xa;    if(period == KP_DAY)&#xa;    {&#xa;        return extractDayData(baseKline, times, bIncludeOpen);&#xa;    }&#xa;    else if(period == KP_Minute1)&#xa;    {&#xa;        return extractMin1Data(baseKline, times, sInfo, bIncludeOpen);&#xa;    }&#xa;    else if(period == KP_Minute5)&#xa;    {&#xa;        return extractMin5Data(baseKline, times, sInfo, bIncludeOpen);&#xa;    }&#xa;    &#xa;    return NULL;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Z-ceUlf4IhPRo_-z3r3I-11">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-14" value="if(baseKline == NULL || baseKline-&gt;size() == 0)&#xa;        return NULL;&#xa;    //一倍，则不需要转换&#xa;    if(times &lt;= 1 || period == KP_Tick)&#xa;    {&#xa;        return NULL;&#xa;    }&#xa;    if(period == KP_DAY)&#xa;    {&#xa;        return extractDayData(baseKline, times, bIncludeOpen);&#xa;    }&#xa;    else if(period == KP_Minute1)&#xa;    {&#xa;        return extractMin1Data(baseKline, times, sInfo, bIncludeOpen);&#xa;    }&#xa;    else if(period == KP_Minute5)&#xa;    {&#xa;        return extractMin5Data(baseKline, times, sInfo, bIncludeOpen);&#xa;    }&#xa;    &#xa;    return NULL;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-11" vertex="1">
           <mxGeometry y="60" width="980" height="340" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-15" value="WTSDataFactory::extractMin5Data(WTSKlineSlice* baseKline, uint32_t times, WTSSessionInfo* sInfo, bool bIncludeOpen /* = true */)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-15" value="WTSDataFactory::extractMin5Data(WTSKlineSlice* baseKline, uint32_t times, WTSSessionInfo* sInfo, bool bIncludeOpen /* = true */)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="5290" y="-660" width="820" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-16" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Z-ceUlf4IhPRo_-z3r3I-15">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-16" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-15" vertex="1">
           <mxGeometry y="26" width="820" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Z-ceUlf4IhPRo_-z3r3I-15">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-15" vertex="1">
           <mxGeometry y="52" width="820" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-18" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Z-ceUlf4IhPRo_-z3r3I-15">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-18" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-15" vertex="1">
           <mxGeometry y="60" width="820" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Z-ceUlf4IhPRo_-z3r3I-14" target="Z-ceUlf4IhPRo_-z3r3I-15">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Z-ceUlf4IhPRo_-z3r3I-14" target="Z-ceUlf4IhPRo_-z3r3I-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ri0OM0G5Gc92bkkvRqxp-1" value="class WTSKlineData : public WTSObject" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="3930" y="-288" width="980" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Ri0OM0G5Gc92bkkvRqxp-2" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ri0OM0G5Gc92bkkvRqxp-1">
+          <mxGeometry y="26" width="980" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Ri0OM0G5Gc92bkkvRqxp-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Ri0OM0G5Gc92bkkvRqxp-1">
+          <mxGeometry y="52" width="980" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Ri0OM0G5Gc92bkkvRqxp-4" value="protected:&#xa;    char            m_strCode[32];&#xa;    WTSKlinePeriod  m_kpPeriod;&#xa;    uint32_t        m_uTimes;&#xa;    bool            m_bUnixTime;    //是否是时间戳格式，目前只在秒线上有效&#xa;    WTSBarList      m_vecBarData;&#xa;    bool            m_bClosed;      //是否是闭合K线" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ri0OM0G5Gc92bkkvRqxp-1">
+          <mxGeometry y="60" width="980" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

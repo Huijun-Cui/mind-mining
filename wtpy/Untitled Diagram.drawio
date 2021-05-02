@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-05-02T14:50:11.002Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="3M0v6QJ7LOc1X-vPYW7a" version="14.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-02T14:57:56.732Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="7U5OvBA3X5108Z2IZm9E" version="14.6.9" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
-    <mxGraphModel dx="5585" dy="3212" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="11510" dy="6520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -868,9 +868,9 @@
           <mxGeometry x="5830" y="-1880" width="2350" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Z-ceUlf4IhPRo_-z3r3I-2" value=" WTSKlineSlice* create(const char* code, WTSKlinePeriod period, uint32_t times, WTSBarStruct* hisHead, int32_t hisCnt, WTSBarStruct* rtHead = NULL, int32_t rtCnt = 0)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="5910" y="-1192" width="1040" height="260" as="geometry" />
+          <mxGeometry x="5850" y="-1405" width="1040" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-3" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-2" vertex="1">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-3" value="rrtHead和rtCount是当日的数据，我猜测是在实盘中会用到的，回测的时候，都用默认值值null和0" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-2" vertex="1">
           <mxGeometry y="26" width="1040" height="26" as="geometry" />
         </mxCell>
         <mxCell id="Z-ceUlf4IhPRo_-z3r3I-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-2" vertex="1">
@@ -915,7 +915,7 @@
         <mxCell id="Z-ceUlf4IhPRo_-z3r3I-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-15" vertex="1">
           <mxGeometry y="52" width="820" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-18" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-15" vertex="1">
+        <mxCell id="Z-ceUlf4IhPRo_-z3r3I-18" value="详细注解看代码" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Z-ceUlf4IhPRo_-z3r3I-15" vertex="1">
           <mxGeometry y="60" width="820" height="200" as="geometry" />
         </mxCell>
         <mxCell id="Z-ceUlf4IhPRo_-z3r3I-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Z-ceUlf4IhPRo_-z3r3I-14" target="Z-ceUlf4IhPRo_-z3r3I-15" edge="1">
@@ -957,7 +957,7 @@
         <mxCell id="Ri0OM0G5Gc92bkkvRqxp-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Ri0OM0G5Gc92bkkvRqxp-10">
           <mxGeometry y="52" width="850" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Ri0OM0G5Gc92bkkvRqxp-13" value="if (_bars_cache.find(rawKey) == _bars_cache.end())&#xa;            {&#xa;                if (_mode == &quot;csv&quot;)&#xa;                {&#xa;                    bHasHisData = cacheRawBarsFromCSV(rawKey, stdCode, kp);&#xa;                }&#xa;                else if (_mode == &quot;db&quot;)&#xa;                {&#xa;                    bHasHisData = cacheRawBarsFromDB(rawKey, stdCode, kp);&#xa;                }&#xa;                else&#xa;                {&#xa;                    bHasHisData = cacheRawBarsFromBin(rawKey, stdCode, kp);&#xa;                }&#xa;            }&#xa;................................&#xa;&#xa;WTSKlineSlice* rawKline = WTSKlineSlice::create(stdCode, kp, realTimes, &amp;rawBars._bars[0], rawBars._bars.size());&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ri0OM0G5Gc92bkkvRqxp-10">
+        <mxCell id="Ri0OM0G5Gc92bkkvRqxp-13" value="if (_bars_cache.find(rawKey) == _bars_cache.end())&#xa;            {&#xa;                if (_mode == &quot;csv&quot;)&#xa;                {&#xa;                    bHasHisData = cacheRawBarsFromCSV(rawKey, stdCode, kp);&#xa;                }&#xa;                else if (_mode == &quot;db&quot;)&#xa;                {&#xa;                    bHasHisData = cacheRawBarsFromDB(rawKey, stdCode, kp);&#xa;                }&#xa;                else&#xa;                {&#xa;                    bHasHisData = cacheRawBarsFromBin(rawKey, stdCode, kp);&#xa;                }&#xa;            }&#xa;。。。。。。。。。。。。。。。。。。。。。&#xa;&#xa;WTSKlineSlice* rawKline = WTSKlineSlice::create(stdCode, kp, realTimes, &amp;rawBars._bars[0], rawBars._bars.size());&#xa;&#xa;。。。。。。。。。。。。。。。。。。。。。&#xa;&#xa;static WTSDataFactory dataFact;&#xa;WTSKlineData* kData = dataFact.extractKlineData(rawKline, kp, realTimes, sInfo, true);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ri0OM0G5Gc92bkkvRqxp-10">
           <mxGeometry y="60" width="850" height="390" as="geometry" />
         </mxCell>
         <mxCell id="Ri0OM0G5Gc92bkkvRqxp-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.424;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Ri0OM0G5Gc92bkkvRqxp-8" target="Ri0OM0G5Gc92bkkvRqxp-10">

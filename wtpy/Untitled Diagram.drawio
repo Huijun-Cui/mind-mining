@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-05-03T13:25:50.501Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="noOgj26AHoatPLSDa8aC" version="14.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-03T13:33:57.044Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="b6sicMzuB1bzDvZv2GqU" version="14.6.9" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
     <mxGraphModel dx="5822" dy="3344" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -942,7 +942,7 @@
         <mxCell id="Ri0OM0G5Gc92bkkvRqxp-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Ri0OM0G5Gc92bkkvRqxp-5" vertex="1">
           <mxGeometry y="52" width="720" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Ri0OM0G5Gc92bkkvRqxp-8" value="WTSKlineSlice* kline = _replayer-&gt;get_kline_slice(stdCode, basePeriod.c_str(), count, times, isMain);&#xa;&#xa;。。。。。。。。。。。。。。。。。。。。。。。。。。。。。&#xa;&#xa;KlineTag&amp; tag = _kline_tags[key];&#xa;tag._closed = false;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ri0OM0G5Gc92bkkvRqxp-5" vertex="1">
+        <mxCell id="Ri0OM0G5Gc92bkkvRqxp-8" value="WTSKlineSlice* kline = _replayer-&gt;get_kline_slice(stdCode, basePeriod.c_str(), count, times, isMain);&#xa;&#xa;。。。。。。。。。。。。。。。。。。。。。。。。。。。。。&#xa;&#xa;KlineTag&amp; tag = _kline_tags[key];&#xa;tag._closed = false;&#xa;。。。。。。。。。。。。。。。。。。。&#xa;return kline;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ri0OM0G5Gc92bkkvRqxp-5" vertex="1">
           <mxGeometry y="60" width="720" height="170" as="geometry" />
         </mxCell>
         <mxCell id="Ri0OM0G5Gc92bkkvRqxp-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="POoTXl7KcNiQC0DHqmNx-4" target="Ri0OM0G5Gc92bkkvRqxp-5" edge="1">

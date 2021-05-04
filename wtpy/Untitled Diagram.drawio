@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-05-04T08:12:21.851Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="PAZPlnhr-9rIeqbPg2zr" version="14.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-04T09:19:05.108Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="iDJfF30B-zjhxDOlKFnl" version="14.6.9" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
-    <mxGraphModel dx="5213" dy="3004" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="5381" dy="3098" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -853,7 +853,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="POoTXl7KcNiQC0DHqmNx-1" value="WtUInt32 cta_get_bars(CtxHandler cHandle, const char* stdCode, const char* period, unsigned int barCnt, bool isMain, FuncGetBarsCallback cb)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="2765" y="-850" width="920" height="220" as="geometry" />
+          <mxGeometry x="2765" y="-850" width="920" height="320" as="geometry" />
         </mxCell>
         <mxCell id="POoTXl7KcNiQC0DHqmNx-2" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="POoTXl7KcNiQC0DHqmNx-1" vertex="1">
           <mxGeometry y="26" width="920" height="26" as="geometry" />
@@ -861,8 +861,8 @@
         <mxCell id="POoTXl7KcNiQC0DHqmNx-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="POoTXl7KcNiQC0DHqmNx-1" vertex="1">
           <mxGeometry y="52" width="920" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="POoTXl7KcNiQC0DHqmNx-4" value="CtaMocker* ctx = getRunner().cta_mocker();&#xa;WTSKlineSlice* kData = ctx-&gt;stra_get_bars(stdCode, period, barCnt, isMain);&#xa;return reaCnt  // 返回bar的个数" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="POoTXl7KcNiQC0DHqmNx-1" vertex="1">
-          <mxGeometry y="60" width="920" height="160" as="geometry" />
+        <mxCell id="POoTXl7KcNiQC0DHqmNx-4" value="CtaMocker* ctx = getRunner().cta_mocker();&#xa;WTSKlineSlice* kData = ctx-&gt;stra_get_bars(stdCode, period, barCnt, isMain);&#xa;。。。。。。。。。。。。。。。。。。&#xa;for (int32_t idx = 0; idx &lt; kData-&gt;size() &amp;&amp; left &gt; 0; idx++, left--)&#xa;            {&#xa;                WTSBarStruct* curBar = kData-&gt;at(idx);&#xa;                cb(cHandle, stdCode, period, curBar, false); // 往python的数据结构里写k线数据&#xa;                reaCnt += 1;&#xa;            }&#xa;&#xa;return reaCnt  // 返回bar的个数&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="POoTXl7KcNiQC0DHqmNx-1" vertex="1">
+          <mxGeometry y="60" width="920" height="260" as="geometry" />
         </mxCell>
         <mxCell id="Z-ceUlf4IhPRo_-z3r3I-1" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" parent="1" vertex="1">
           <mxGeometry x="5830" y="-1880" width="2350" height="50" as="geometry" />

@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-05-04T16:57:15.873Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="8iUe3XHJda6_FtUzY-lX" version="14.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-04T17:02:38.218Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="T6pLgJn-h3hptLQiYLUH" version="14.6.9" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
-    <mxGraphModel dx="5381" dy="3098" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="5822" dy="3344" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1002,35 +1002,20 @@
         <mxCell id="_xV8YZQySFCnI2b6VyjX-8" value="switch (eType)&#xa;    {&#xa;    case ET_CTA: if (_cb_cta_calc) _cb_cta_calc(id, curDate, curTime); break;&#xa;    case ET_SEL: if (_cb_sel_calc) _cb_sel_calc(id, curDate, curTime); break;&#xa;    default:&#xa;        break;&#xa;    }" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="_xV8YZQySFCnI2b6VyjX-5">
           <mxGeometry y="60" width="720" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="_xV8YZQySFCnI2b6VyjX-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_xV8YZQySFCnI2b6VyjX-10" target="_xV8YZQySFCnI2b6VyjX-1">
+        <mxCell id="_xV8YZQySFCnI2b6VyjX-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_xV8YZQySFCnI2b6VyjX-24" target="_xV8YZQySFCnI2b6VyjX-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_xV8YZQySFCnI2b6VyjX-10" value="CtaMocker::on_schedule(uint32_t curDate, uint32_t curTime)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="-580" y="-1275" width="430" height="86" as="geometry" />
+        <mxCell id="_xV8YZQySFCnI2b6VyjX-24" value="Classname" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-660" y="-1290" width="520" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="_xV8YZQySFCnI2b6VyjX-11" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="_xV8YZQySFCnI2b6VyjX-10">
-          <mxGeometry y="26" width="430" height="26" as="geometry" />
+        <mxCell id="_xV8YZQySFCnI2b6VyjX-25" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="_xV8YZQySFCnI2b6VyjX-24">
+          <mxGeometry y="26" width="520" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="_xV8YZQySFCnI2b6VyjX-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="_xV8YZQySFCnI2b6VyjX-10">
-          <mxGeometry y="52" width="430" height="8" as="geometry" />
+        <mxCell id="_xV8YZQySFCnI2b6VyjX-26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="_xV8YZQySFCnI2b6VyjX-24">
+          <mxGeometry y="52" width="520" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="_xV8YZQySFCnI2b6VyjX-13" value="on_mainkline_updated(curDate, curTime);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="_xV8YZQySFCnI2b6VyjX-10">
-          <mxGeometry y="60" width="430" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="_xV8YZQySFCnI2b6VyjX-15" value="void WtCtaEngine::on_schedule(uint32_t curDate, uint32_t curTime)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="-1240" y="-1275" width="490" height="86" as="geometry" />
-        </mxCell>
-        <mxCell id="_xV8YZQySFCnI2b6VyjX-16" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="_xV8YZQySFCnI2b6VyjX-15">
-          <mxGeometry y="26" width="490" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="_xV8YZQySFCnI2b6VyjX-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="_xV8YZQySFCnI2b6VyjX-15">
-          <mxGeometry y="52" width="490" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="_xV8YZQySFCnI2b6VyjX-18" value="ctx-&gt;on_schedule(curDate, curTime);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="_xV8YZQySFCnI2b6VyjX-15">
-          <mxGeometry y="60" width="490" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="_xV8YZQySFCnI2b6VyjX-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_xV8YZQySFCnI2b6VyjX-16" target="_xV8YZQySFCnI2b6VyjX-10">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="_xV8YZQySFCnI2b6VyjX-27" value="通过一系列的调用" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="_xV8YZQySFCnI2b6VyjX-24">
+          <mxGeometry y="60" width="520" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
